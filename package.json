@@ -1,0 +1,32 @@
+{
+  "name": "mija",
+  "version": "1.0.5",
+  "description": "Console Logger with Emoji support!",
+  "main": "mija.js",
+  "scripts": {
+    "test": "xo && ava -v"
+  },
+  "keywords": [
+    "mija",
+    "logger",
+    "console",
+    "log",
+    "emoji",
+    "color"
+  ],
+  "dependencies": {
+    "chalk": "2.4.1",
+    "execa": "^0.10.0"
+  },
+  "devDependencies": {
+    "xo": "*",
+    "ava": "*"
+  },
+  "author": "Antoni Kepinski <a@kepinski.me> (https://kepinski.me)",
+  "bugs": {
+    "url": "https://github.com/xxczaki/mija/issues"
+  },
+  "repository": "xxczaki/mija",
+  "homepage": "https://github.com/xxczaki/mija#readme",
+  "license": "MIT"
+}
