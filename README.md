@@ -15,6 +15,8 @@ npm install --save mija
 
 ## Usage
 
+<img src="https://imgur.com/KBP1qu0.png" alt="Screenshot" align="right" width="279"></a>
+
 ```js
 const mija = require('mija');
 
