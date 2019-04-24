@@ -1,4 +1,4 @@
-const mija = require('.');
+const mija = require('../dist');
 
 mija.info('Please contact us');
 
