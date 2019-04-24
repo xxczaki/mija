@@ -1,11 +1,13 @@
 {
   "name": "mija",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Console Logger with Emoji support!",
-  "main": "mija.js",
+  "main": "dist",
   "scripts": {
-    "test": "xo && ava -v"
-  },
+		"build": "del dist && tsc",
+		"test": "xo && npm run build && ava",
+		"prepublishOnly": "npm run build"
+	},
   "keywords": [
     "mija",
     "logger",
@@ -15,12 +17,19 @@
     "color"
   ],
   "dependencies": {
-    "chalk": "2.4.1",
-    "execa": "^1.0.0"
+    "chalk": "2.4.2"
   },
   "devDependencies": {
-    "xo": "*",
-    "ava": "*"
+    "@akepinski/tsconfig": "0.0.2",
+    "@types/execa": "^0.9.0",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "ava": "*",
+    "del-cli": "^1.1.0",
+    "eslint-config-xo-typescript": "^0.10.1",
+    "execa": "^1.0.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5",
+    "xo": "*"
   },
   "author": "Antoni Kepinski <a@kepinski.me> (https://kepinski.me)",
   "bugs": {
@@ -28,5 +37,30 @@
   },
   "repository": "xxczaki/mija",
   "homepage": "https://github.com/xxczaki/mija#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "types": "dist",
+	"sideEffects": false,
+	"ava": {
+		"babel": false,
+		"compileEnhancements": false,
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+	},
+	"xo": {
+		"extends": "xo-typescript",
+		"extensions": [
+			"ts"
+		],
+		"rules": {
+			"ava/no-ignored-test-files": "off",
+			"new-cap": "off"
+		},
+		"ignores": [
+			"test/fixture.js"
+		]
+	}
 }
