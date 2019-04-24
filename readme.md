@@ -10,8 +10,12 @@
 ## Install
 
 ```bash
-npm install --save mija
+npm install mija
 ```
+
+<a href="https://www.patreon.com/akepinski">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
 ## Usage
 
@@ -33,8 +37,6 @@ mija.custom(emoji, text);
 ```
 
 **option**
-
-Type: `Object`
 
 Any available [option](https://github.com/xxczaki/mija#options).
 
@@ -73,6 +75,10 @@ Custom emoji. Can only be used with `mija.custom`.
 `danger`
 
 `custom`
+
+## Related
+
+* [xa](https://github.com/xxczaki/xa) - Simple console logger, that works in Node.js, Electron and the Browser
 
 ### License
 
