@@ -17,7 +17,7 @@
     "color"
   ],
   "dependencies": {
-    "chalk": "2.4.2"
+    "chalk": "3.0.0"
   },
   "devDependencies": {
     "@akepinski/tsconfig": "0.0.2",
