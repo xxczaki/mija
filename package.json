@@ -22,7 +22,7 @@
   "devDependencies": {
     "@akepinski/tsconfig": "0.0.2",
     "@types/execa": "^0.9.0",
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
     "ava": "*",
     "del-cli": "^1.1.0",
     "eslint-config-xo-typescript": "^0.10.1",
